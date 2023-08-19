@@ -49,7 +49,7 @@ class InstagramBot:
             print(str(pic_href))
             self.driver.get(pic_href)
             time.sleep(5)
-            like_button = self.driver.find_element(By.XPATH, "//*[local-name()='svg' and @aria-label='Like']")
+            like_button = self.driver.find_element(By.XPATH, "//*[local-name()='svg' and @aria-label='Like' and @height='24'] ")
             like_button.click()
             time.sleep(5)
             # self.driver.execute_script('window.scrollTo(0, document.body.scrollHeight);')   
